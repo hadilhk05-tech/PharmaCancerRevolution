@@ -1,0 +1,5 @@
+ADME parameters for molecule X
+Absorption: High
+Distribution: Moderate
+Metabolism: Fast
+Excretion: Slow
