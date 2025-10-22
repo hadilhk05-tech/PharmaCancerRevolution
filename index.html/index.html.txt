@@ -1,2 +1,26 @@
-<h1>PharmaCancer Revolution Project</h1>
-<p>Deuxième modification sur la branche develop</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaCancerRevolution</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>PharmaCancerRevolution</h1>
+        <p>Next-Generation Prostate Cancer Therapeutics</p>
+    </header>
+
+    <section>
+        <h2>Mission Statement</h2>
+        <p>Prostate cancer remains one of the leading causes of cancer mortality worldwide...</p>
+        <div class="stats">
+            <div>5<br><small>FDA Approved Agents</small></div>
+            <div>84%<br><small>Avg. Bioavailability</small></div>
+            <div>67%<br><small>OS Improvement</small></div>
+            <div>12+<br><small>Months PFS Benefit</small></div>
+        </div>
+    </section>
+</body>
+</html>
