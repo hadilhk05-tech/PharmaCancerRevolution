@@ -3,24 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PharmaCancerRevolution</title>
-    <link rel="stylesheet" href="style.css">
+    <title>OncoSphere Analytics | Lung Cancer Therapeutics</title>
+    <style>
+        /* ... (Le style CSS reste le même que l'original) ... */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%); color: #333; }
+        .molecule-card { border-left: 5px solid #007bff; }
+        .molecule-card.featured { border-left-color: #ffc107; }
+        .badge { background: #ffc107; }
+        th { background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%); }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>PharmaCancerRevolution</h1>
-        <p>Next-Generation Prostate Cancer Therapeutics</p>
-    </header>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo-section">
+                    <div>
+                        <h1>OncoSphere Analytics</h1>
+                        <p class="subtitle">Pioneering Targeted Therapies for Lung Cancer</p>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-    <section>
-        <h2>Mission Statement</h2>
-        <p>Prostate cancer remains one of the leading causes of cancer mortality worldwide...</p>
-        <div class="stats">
-            <div>5<br><small>FDA Approved Agents</small></div>
-            <div>84%<br><small>Avg. Bioavailability</small></div>
-            <div>67%<br><small>OS Improvement</small></div>
-            <div>12+<br><small>Months PFS Benefit</small></div>
+        <section class="hero" id="mission">
+            <h2>🎯 Mission Statement</h2>
+            <p>
+                Lung cancer is the leading cause of cancer-related death worldwide. Our platform focuses on the pharmacology of next-generation targeted therapies and immunotherapies for Non-Small Cell Lung Cancer (NSCLC), providing crucial data for researchers and clinicians.
+            </p>
+        </section>
+
+        <h2 id="molecules" style="color: white; margin: 30px 0 20px; text-align: center; font-size: 2em;">
+            🏆 Top 5 Therapeutic Agents
+        </h2>
+        
+        <div class="molecules">
+            <div class="molecule-card featured">
+                <h3>
+                    Osimertinib (Tagrisso)
+                    <span class="badge">RANK #1</span>
+                </h3>
+                <div class="molecule-info">
+                    <p><strong>ChEMBL ID:</strong> CHEMBL3301610</p>
+                    <p><strong>Target:</strong> EGFR (T790M-mutated) Inhibitor</p>
+                    <p><strong>Key Advantage:</strong> High CNS penetration (for brain mets)</p>
+                    <p><strong>Bioavailability:</strong> ~70%</p>
+                    <p><strong>Half-life:</strong> ~48 hours</p>
+                </div>
+                <div class="efficacy-bar"><div class="efficacy-fill" style="width: 95%;">Efficacy: 95%</div></div>
+            </div>
+
+            <div class="molecule-card">
+                <h3>Alectinib (Alecensa)</h3>
+                <div class="molecule-info">
+                    <p><strong>ChEMBL ID:</strong> CHEMBL2424782</p>
+                    <p><strong>Target:</strong> ALK Inhibitor (2nd Gen)</p>
+                    <p><strong>Bioavailability:</strong> ~37% (with food)</p>
+                    <p><strong>Half-life:</strong> 33 hours</p>
+                    <p><strong>Key Advantage:</strong> Superior CNS efficacy</p>
+                </div>
+                <div class="efficacy-bar"><div class="efficacy-fill" style="width: 91%;">Efficacy: 91%</div></div>
+            </div>
+
+            <div class="molecule-card">
+                <h3>Pemetrexed (Alimta)</h3>
+                <div class="molecule-info">
+                    <p><strong>Type:</strong> Chemotherapy</p>
+                    <p><strong>Target:</strong> Thymidylate synthase</p>
+                    <p><strong>Route:</strong> IV infusion</p>
+                    <p><strong>Key Indication:</strong> Non-squamous NSCLC</p>
+                    <p><strong>Requirement:</strong> Vitamin B12/Folic Acid Supplement</p>
+                </div>
+                <div class="efficacy-bar"><div class="efficacy-fill" style="width: 78%;">Efficacy: 78%</div></div>
+            </div>
+
+            <div class="molecule-card">
+                <h3>Gefitinib (Iressa)</h3>
+                <div class="molecule-info">
+                    <p><strong>ChEMBL ID:</strong> CHEMBL941</p>
+                    <p><strong>Target:</strong> EGFR Inhibitor (1st Gen)</p>
+                    <p><strong>Bioavailability:</strong> ~60%</p>
+                    <p><strong>Half-life:</strong> 41 hours</p>
+                    <p><strong>Toxicity Concern:</strong> Hepatotoxicity</p>
+                </div>
+                <div class="efficacy-bar"><div class="efficacy-fill" style="width: 75%;">Efficacy: 75%</div></div>
+            </div>
+            
+            <div class="molecule-card">
+                <h3>Erlotinib (Tarceva)</h3>
+                <div class="molecule-info">
+                    <p><strong>ChEMBL ID:</strong> CHEMBL939</p>
+                    <p><strong>Target:</strong> EGFR Inhibitor (1st Gen)</p>
+                    <p><strong>Bioavailability:</strong> ~60%</p>
+                    <p><strong>Half-life:</strong> 36 hours</p>
+                    <p><strong>Note:</strong> Smoking reduces efficacy</p>
+                </div>
+                <div class="efficacy-bar"><div class="efficacy-fill" style="width: 72%;">Efficacy: 72%</div></div>
+            </div>
         </div>
-    </section>
+        
+        <section class="comparison-table" id="comparison">
+            <h2 style="color: #2c3e50; margin-bottom: 20px;">📈 Head-to-Head Comparison (1st Line)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Drug</th>
+                        <th>Target</th>
+                        <th>Median PFS</th>
+                        <th>CNS Efficacy</th>
+                        <th>Safety Profile</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Osimertinib</strong></td>
+                        <td>EGFR</td>
+                        <td>18.9 months</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Alectinib</strong></td>
+                        <td>ALK</td>
+                        <td>34.8 months</td>
+                        <td>⭐⭐⭐⭐⭐</td>
+                        <td>⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gefitinib</strong></td>
+                        <td>EGFR</td>
+                        <td>9.7 months</td>
+                        <td>⭐⭐</td>
+                        <td>⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Erlotinib</strong></td>
+                        <td>EGFR</td>
+                        <td>11.0 months</td>
+                        <td>⭐⭐</td>
+                        <td>⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pemetrexed + Chemo</strong></td>
+                        <td>DNA Synthesis</td>
+                        <td>8.4 months</td>
+                        <td>⭐</td>
+                        <td>⭐⭐</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <footer>
+            <p>© 2025 OncoSphere Analytics | For Educational and Research Purposes Only</p>
+        </footer>
+    </div>
 </body>
 </html>
